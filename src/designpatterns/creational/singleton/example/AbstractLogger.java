@@ -45,7 +45,7 @@ public abstract class AbstractLogger {
      * @param message The informational message to log.
      * @return A formatted log message at the INFO level.
      */
-    public String infoMsg(String message) {
+    protected String infoMsg(String message) {
         return getLogMessage(message, LogLevel.INFO);
     }
 
@@ -55,7 +55,7 @@ public abstract class AbstractLogger {
      * @param message The warning message to log.
      * @return A formatted log message at the WARN level.
      */
-    public String warnMsg(String message) {
+    protected String warnMsg(String message) {
         return getLogMessage(message, LogLevel.WARN);
     }
 
@@ -65,7 +65,7 @@ public abstract class AbstractLogger {
      * @param message The error message to log.
      * @return A formatted log message at the ERROR level.
      */
-    public String errorMsg(String message) {
+    protected String errorMsg(String message) {
         return getLogMessage(message, LogLevel.ERROR);
     }
 }
