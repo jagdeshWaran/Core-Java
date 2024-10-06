@@ -23,6 +23,7 @@ package designpatterns.creational.singleton;
  * Singleton instance = Singleton.getInstance();
  * </pre>
  */
+@SuppressWarnings("unused")
 public class Singleton {
     private static Singleton SINGLETON_INSTANCE;
 
